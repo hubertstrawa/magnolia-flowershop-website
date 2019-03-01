@@ -193,10 +193,8 @@
 }
 
 .modal-body > header div img:hover { 
-  transform: scale(1.05);
-  box-shadow: 0 1.5rem 8rem rgba(0,0,0, .6);
+  opacity: .5;
   transition: all ease-in-out 250ms;
-
 }
 
 @media screen and (max-width: 400px) {
