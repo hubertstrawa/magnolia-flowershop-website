@@ -1,0 +1,255 @@
+.header {
+    background-image: linear-gradient(to right bottom, rgba($color-secondary, .8), rgba($color-primary, .8)),url(../img/background-flower-small.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: full-start / full-end;
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: $bp-small),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: $bp-small), 
+        only screen and (min-width: $bp-large) {
+        background-image: linear-gradient(to right bottom, rgba($color-secondary, .8), rgba($color-primary, .8)),url(../img/background-flower.jpg);
+    }
+}
+
+.heading-box {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20vw;
+
+    @media only screen and (max-width: $bp-medium){
+        padding-left: 15vw;
+    }
+    
+    .heading-1 {
+        margin-left: -.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .heading-3 {
+        color: #efd2b1;
+        font-size: 1.9rem;
+        margin-bottom: 0.7rem;
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-start;
+
+    
+}
+
+.social {
+
+    &__fb {
+        &--icon {
+            width: 3.4rem;
+            height: 3.4rem;
+            margin-right: 0.8rem;
+            fill: #efd2b1;
+        }
+
+    }
+
+    &__ig {
+        &--icon {
+            width: 3.4rem;
+            height: 3.4rem;
+            fill: #efd2b1;
+        }
+    }
+
+    &__fb--icon:hover, &__ig--icon:hover {
+            transform: scale(1.2);
+            transition: all 200ms ease-in-out;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MAIN NAV
+.main-nav {
+    grid-column: full-start / full-end;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.main-nav h1 {
+    padding: 1rem;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    margin-left: 1.6rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background-color: #231f20;
+    height: 2px;
+    width: 3em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin: 1.5rem 0 1.6rem 1.6rem;
+}
+
+nav a {
+    color: $color-secondary;
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 130ms ease-in-out;
+    display: block;
+    text-align: center;
+}
+
+nav a:hover {
+    color: $color-primary;
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 200ms;
+}
+
+.logo-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+@media screen and (min-width: $bp-medium){
+    .nav-toggle-label {
+        display: none;
+    }
+
+    .main-nav {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(70rem, 3fr) 1fr;
+    }
+
+    .logo-box {
+        grid-column: 2 / 3;
+        grid-row-start: 1;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+    }
+
+    nav li {
+        margin-left: 4em;
+        margin-bottom: 0;
+    }
+
+    nav a {
+        opacity: 1;
+        color: $color-secondary;
+        font-size: 1.7rem;
+        position: relative;
+    }
+
+    nav a:hover {
+        color: #000;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 2px;
+        background: black;
+        position: absolute;
+        top: -1rem;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        transform: scale(1,1);
+    }
+}

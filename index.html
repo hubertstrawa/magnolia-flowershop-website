@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i|Montserrat:300,300i,400" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="img/logo.png">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+
+        <title>Kwiaciarnia Magnolia &mdash; pracownia florystyczna</title>
+    </head>
+
+
+    <body class="container">     
+
+        <div class="main-nav">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href="#top">Strona główna</a></li>
+                    <li><a href="#o_nas">O nas</a></li>
+                    <li><a href="#galeria">Galeria zdjęć</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <div class="logo-box">
+                    <img src="img/logo.png" alt="Logo" class="logo">
+            </div>
+        </div>
+
+        
+        <header class="header">
+                <div class="heading-box">
+                    <h3 class="heading-3">Pracownia florystyczna</h3>
+                    <h1 class="heading-1">Kwiaciarnia Magnolia</h1>  
+
+                    <div class="socials">
+                        <div class="social__fb">
+                            <a href="https://www.facebook.com/kwiaciarniamagnoliajaroslaw" target="_blank"><svg class="social__fb--icon"><use xlink:href="img/sprite.svg#icon-facebook-with-circle"></use></svg></a>
+                        </div>
+                        <div class="social__ig">
+                            <a href="https://www.instagram.com/kwiaciarniamagnoliajaroslaw/" target="_blank"><svg class="social__ig--icon"><use xlink:href="img/sprite.svg#icon-instagram-with-circle"></use></svg></a>
+                        </div>
+                    </div>
+                </div>
+        </header>
+
+        <section class="features">
+            
+            <div class="feature">
+                <img src="img/01-lotus.svg" alt="Kiwi standing on oval" class="feature__icon">
+                <h4 class="heading-4 heading-4--dark">Kwiaty na każdą okazję</h4>
+                <p class="feature__text">
+                 W naszym asortymencie znajdą Państwo wszelkiego rodzaju kwiaty na każdą okazję; cięte, sztuczne i doniczkowe, a także dekoracje.</p>
+            </div>
+
+            <div class="feature">
+                <img src="img/03-clover.svg" alt="Kiwi standing on oval" class="feature__icon">
+                <h4 class="heading-4 heading-4--dark">Pracownia florystyczna</h4>
+                <p class="feature__text">Wykonujemy bukiety ślubne, komunijne, wieńce pogrzebowe a także dekorujemy kościoły, sale czy samochody. </p>
+            </div>
+
+
+            <div class="feature">
+                <img src="img/04-orchid.svg" alt="Kiwi standing on oval" class="feature__icon">
+                <h4 class="heading-4 heading-4--dark">Dostawa do domu</h4>
+                <p class="feature__text">Zamów bukiet dla swojej ukochanej, a my dowieziemy go na miejsce. Darmowa dostawa kwiatów na terenie Jarosławia!</p>
+
+        </section>    
+
+
+
+        <div class="aboutus__pictures" id="o_nas">
+            <img src="img/img2.jpg" alt="New house" class="aboutus__img--1">  
+            <img src="img/img3.jpg" alt="New house" class="aboutus__img--2">  
+            
+        </div>
+        <div class="aboutus__content">
+            <h3 class="heading-3 mb-sm">O nas</h3>
+            <h2 class="heading-2 heading-2--dark mb-md">z miłości do kwiatów</h2>
+            <p class="aboutus__text">Jesteśmy kreatywnymi zwolennikami minimalizmu i elegancji. Każdy klient jest traktowany przez nas indywidualnie, a każda kompozycja tworzona z myślą o konkretnych oczekiwaniach klienta. Kwiaty są naszą miłością, a świat staramy się upiększać za ich pomocą.</p>
+            <p class="aboutus__text">W galeriach zdjęć poniżej mogą Państwo zobaczyć wszelkiego rodzaju kreacje wykonane przez nas.</p>
+
+            <a href="#galeria" class="btn">zobacz zdjęcia</a>
+
+    
+        </div>
+
+
+
+
+        <section class="galleries" id="galeria">
+           
+            <div class="flowergallery">
+                <img src="img/florystyka-slubna.jpg" alt="House 1" class="flowergallery__img">
+                <h5 class="flowergallery__name">Florystyka ślubna</h5>
+                <p class="flowergallery__desc">Pełna oprawa florystyczna, bukiety ślubne, wystroje samochodów oraz kościołów, dekoracja sal weselnych.</p>
+                <button class="btn flowergallery__btn" id="modalBtn_Fl_Sl">Zobacz zdjęcia</button>
+            </div>
+
+            <!-- FLORYSTYKA SLUBNA GALLERY MODAL -->
+            <div id="modal_Fl_Sl" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="closeBtn_Fl_Sl">&times;</span>
+                        <h2>Florystyka ślubna</h2>
+                    </div>
+                    <div class="modal-body">
+                        <header>
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-1.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-1-thumbnail.jpg"></a></div>
+
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-2.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-2-thumbnail.jpg"></a></div>
+
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-3.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-3-thumbnail.jpg"></a></div>
+
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-4.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-4-thumbnail.jpg"></a></div>
+
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-5.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-5-thumbnail.jpg"></a></div>
+
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-6.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-6-thumbnail.jpg"></a></div>
+
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-7.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-7-thumbnail.jpg"></a></div>
+
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-8.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-8-thumbnail.jpg"></a></div>
+
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-9.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-9-thumbnail.jpg"></a></div>
+
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-10.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-10-thumbnail.jpg"></a></div>
+
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-11.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-11-thumbnail.jpg"></a></div>
+
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-12.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-12-thumbnail.jpg"></a></div>
+
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-13.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-13-thumbnail.jpg"></a></div>
+
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-14.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-14-thumbnail.jpg"></a></div>
+
+                            <div><a data-fancybox="florystyka_slubna" href="gallery_photos/florystyka_slubna/photo-15.jpg"><img src="gallery_photos/florystyka_slubna/thumbnails/photo-15-thumbnail.jpg"></a></div>
+                        </header>  
+                    </div>
+                    <div class="modal-footer">
+                        <h3>zobacz więcej na </h3>
+                        <div class="modal_socials">
+                            <div class="modal_fb">
+                                <a href="https://www.facebook.com/kwiaciarniamagnoliajaroslaw" target="_blank"><svg class="modal_fb--icon"><use xlink:href="img/sprite.svg#icon-facebook-with-circle"></use></svg></a>
+                            </div>
+                            <div class="modal_ig">
+                                <a href="https://www.instagram.com/kwiaciarniamagnoliajaroslaw/" target="_blank"><svg class="modal_ig--icon"><use xlink:href="img/sprite.svg#icon-instagram-with-circle"></use></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flowergallery">
+                <img src="img/florystyka-okolicznosciowa.jpg" alt="House 1" class="flowergallery__img">
+                <h5 class="flowergallery__name">Florystyka okolicznościowa</h5>
+                <p class="flowergallery__desc">Zajmujemy się także wszelkiego rodzaju okolicznościami, komunie święte, chrzciny itp.</p>
+                <button class="btn flowergallery__btn" id="modalBtn_Fl_Ok">Zobacz zdjęcia</button>
+            </div>
+
+            <!-- FLORYSTYKA OKOLICZNOSCIOWA GALLERY MODAL -->
+            <div id="modal_Fl_Ok" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="closeBtn_Fl_Ok">&times;</span>
+                        <h2>Florystyka okolicznościowa</h2>
+                    </div>
+                    <div class="modal-body">
+                        <header>
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-1.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-1-thumbnail.jpg"></a></div>
+            
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-2.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-2-thumbnail.jpg"></a></div>
+            
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-3.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-3-thumbnail.jpg"></a></div>
+            
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-4.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-4-thumbnail.jpg"></a></div>
+            
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-5.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-5-thumbnail.jpg"></a></div>
+            
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-6.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-6-thumbnail.jpg"></a></div>
+            
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-7.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-7-thumbnail.jpg"></a></div>
+            
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-8.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-8-thumbnail.jpg"></a></div>
+            
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-9.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-9-thumbnail.jpg"></a></div>
+            
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-10.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-10-thumbnail.jpg"></a></div>
+            
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-11.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-11-thumbnail.jpg"></a></div>
+            
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-12.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-12-thumbnail.jpg"></a></div>
+            
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-13.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-13-thumbnail.jpg"></a></div>
+            
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-14.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-14-thumbnail.jpg"></a></div>
+            
+                            <div><a data-fancybox="florystyka_okolicznosciowa" href="gallery_photos/florystyka_okolicznosciowa/photo-15.jpg"><img src="gallery_photos/florystyka_okolicznosciowa/thumbnails/photo-15-thumbnail.jpg"></a></div>
+                        </header>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>zobacz więcej na </h3>
+                        <div class="modal_socials">
+                            <div class="modal_fb">
+                                <a href="https://www.facebook.com/kwiaciarniamagnoliajaroslaw" target="_blank"><svg class="modal_fb--icon"><use xlink:href="img/sprite.svg#icon-facebook-with-circle"></use></svg></a>
+                            </div>
+                            <div class="modal_ig">
+                                <a href="https://www.instagram.com/kwiaciarniamagnoliajaroslaw/" target="_blank"><svg class="modal_ig--icon"><use xlink:href="img/sprite.svg#icon-instagram-with-circle"></use></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flowergallery">
+                <img src="img/florystyka-pogrzebowa.jpg" alt="House 1" class="flowergallery__img">
+                <h5 class="flowergallery__name">Florystyka pogrzebowa</h5>
+                <p class="flowergallery__desc">Wykonujemy również wieńce oraz inne dekoracje związane z pogrzebem.</p>
+                <button class="btn flowergallery__btn" id="modalBtn_Fl_Po">Zobacz zdjęcia</button>
+            </div>
+
+
+            <!-- FLORYSTYKA POGRZEBOWA GALLERY MODAL -->
+            <div id="modal_Fl_Po" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="closeBtn_Fl_Po">&times;</span>
+                        <h2>Florystyka pogrzebowa</h2>
+                    </div>
+                    <div class="modal-body">
+                        <header>
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-1.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-1-thumbnail.jpg"></a></div>
+                    
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-2.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-2-thumbnail.jpg"></a></div>
+                    
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-3.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-3-thumbnail.jpg"></a></div>
+                    
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-4.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-4-thumbnail.jpg"></a></div>
+                    
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-5.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-5-thumbnail.jpg"></a></div>
+                    
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-6.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-6-thumbnail.jpg"></a></div>
+                    
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-7.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-7-thumbnail.jpg"></a></div>
+                    
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-8.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-8-thumbnail.jpg"></a></div>
+                    
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-9.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-9-thumbnail.jpg"></a></div>
+                    
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-10.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-10-thumbnail.jpg"></a></div>
+                    
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-11.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-11-thumbnail.jpg"></a></div>
+                    
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-12.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-12-thumbnail.jpg"></a></div>
+                    
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-13.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-13-thumbnail.jpg"></a></div>
+                    
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-14.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-14-thumbnail.jpg"></a></div>
+                    
+                            <div><a data-fancybox="florystyka_pogrzebowa" href="gallery_photos/florystyka_pogrzebowa/photo-15.jpg"><img src="gallery_photos/florystyka_pogrzebowa/thumbnails/photo-15-thumbnail.jpg"></a></div>
+                        </header>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>zobacz więcej na </h3>
+                        <div class="modal_socials">
+                            <div class="modal_fb">
+                                <a href="https://www.facebook.com/kwiaciarniamagnoliajaroslaw" target="_blank"><svg class="modal_fb--icon"><use xlink:href="img/sprite.svg#icon-facebook-with-circle"></use></svg></a>
+                            </div>
+                            <div class="modal_ig">
+                                <a href="https://www.instagram.com/kwiaciarniamagnoliajaroslaw/" target="_blank"><svg class="modal_ig--icon"><use xlink:href="img/sprite.svg#icon-instagram-with-circle"></use></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+
+        </section>
+
+    
+        <div class="contact__first" id="kontakt">
+            <h3 class="heading-3 mb-sm">KONTAKT</h3>
+            <h2 class="heading-2 heading-2--dark mb-md">Skontaktuj się z nami</h2>
+            <p class="contact__text mb-md">
+                Zapraszamy do kontaktu telefonicznego na numer znajdujący się poniżej, zamówienia także mogą Państwo składać pod tym numerem.
+            </p>
+
+            <div class="contact__icons mb-sm">
+                <div class="contact__mobile mb-sm">
+                    <svg class="contact__mobile--icon"><use xlink:href="img/sprite.svg#icon-mobile2"></use></svg>
+                    <p>518 373 740</p>
+                </div>
+                <div class="contact__email mb-sm">
+                    <svg class="contact__email--icon"><use xlink:href="img/sprite.svg#icon-email"></use></svg>
+                    <p>marta@kwiaciarniamagnolia.net</p>
+                </div>
+                <div class="contact__address mb-sm">
+                    <svg class="contact__address--icon"><use xlink:href="img/sprite.svg#icon-compass2"></use></svg>
+                    <p>37-500 Jarosław, Oś. W. Witosa 2</p>
+                </div>
+            </div>
+
+
+            <p class="contact__text mb-sm">Jesteśmy do Państwa dyspozycji codziennie od <strong>poniedziałku do piątku w godzinach 9<sup>00</sup> - 17<sup>00</sup></strong>, a także <strong>w sobotę w godzinach 9<sup>00</sup> - 15<sup>00</sup>.</strong></p>
+
+            <a href="https://www.google.com/maps/dir//google+maps+kwiaciarnia+magnolia+jaros%C5%82aw/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x473c9bd3401dab97:0xbecf2802c61a6b55?ved=2ahUKEwjdzIe0s7ngAhVt-SoKHWCaBRYQ9RcwEHoECAUQDw" class="btn" target="_blank">sprawdź dojazd</a>
+    
+        </div>
+
+        <div class="contact__second">
+            <p></p>
+        </div>
+
+        <section class="customgallery">
+            <figure class="customgallery__item customgallery__item--1">
+                <img src="img/gal-1.jpg" alt="Gallery image 1" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--2">
+                <img src="img/gal-2.jpg" alt="Gallery image 2" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--3">
+                <img src="img/gal-3.jpg" alt="Gallery image 3" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--4">
+                <img src="img/gal-4.jpg" alt="Gallery image 4" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--5">
+                <img src="img/gal-5.jpg" alt="Gallery image 5" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--6">
+                <img src="img/gal-6.jpg" alt="Gallery image 6" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--7">
+                <img src="img/gal-7.jpg" alt="Gallery image 7" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--8">
+                <img src="img/gal-8.jpg" alt="Gallery image 8" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--9">
+                <img src="img/gal-9.jpg" alt="Gallery image 9" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--10">
+                <img src="img/gal-10.jpg" alt="Gallery image 10" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--11">
+                <img src="img/gal-11.jpg" alt="Gallery image 11" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--12">
+                <img src="img/gal-12.jpg" alt="Gallery image 12" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--13">
+                <img src="img/gal-13.jpg" alt="Gallery image 13" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--14">
+                <img src="img/gal-14.jpg" alt="Gallery image 14" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--15">
+                <img src="img/gal-15.jpg" alt="Gallery image 15" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--16">
+                <img src="img/gal-16.jpg" alt="Gallery image 16" class="customgallery__img">
+            </figure>
+            <figure class="customgallery__item customgallery__item--17">
+                <img src="img/gal-17.jpg" alt="Gallery image 17" class="customgallery__img">
+            </figure>
+          
+        </section>
+
+        <footer class="footer">
+            <ul class="bottom_nav">
+                <li class="bottom_nav__item"><a href="#top" class="bottom_nav__link">Strona główna</a></li>
+                <li class="bottom_nav__item"><a href="#o_nas" class="bottom_nav__link">O nas</a></li>
+                <li class="bottom_nav__item"><a href="#galeria" class="bottom_nav__link">Galeria zdjęć</a></li>
+                <li class="bottom_nav__item"><a href="#kontakt" class="bottom_nav__link">Kontakt</a></li>
+            </ul>
+            <p class="copyright">
+                &copy; Copyright 2019 Hubert Strawa (hubertstrawa@gmail.com)
+            </p>
+        </footer>
+
+
+        <script src="scripts/modals.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 850,
+                offset: 40,
+            });   
+
+            var scroll = new SmoothScroll('a[href*="#galeria"]', {
+	            speed: 850,
+                offset: 85,
+            });          
+        </script>
+    </body>
+</html>

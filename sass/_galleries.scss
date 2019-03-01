@@ -1,0 +1,56 @@
+.galleries {
+    grid-column: center-start / center-end;
+
+      display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 7rem;
+
+
+    margin: 15rem 2rem;
+
+    @media only screen and (max-width: $bp-medium){
+        margin: 9rem 2rem;
+    }
+}
+
+.flowergallery {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $color-grey-light-1;
+    grid-row-gap: 1.5rem;
+    box-shadow: 0 1.5rem 8rem rgba(0,0,0, .4);
+
+    &__img {
+        width: 100%;
+        grid-column: 1 / -1;
+    }
+
+    &__name {
+        grid-column: 1 / -1;
+        font-size: 2rem;
+        justify-self: center;
+        font-size: 1.7rem;
+        text-align: center;
+        width: 85%;
+        font-family: $font-display;
+
+        padding: 1.25rem;
+        background-color: $color-secondary;
+        color: #fff;
+        transform: translateY(-3.5rem);
+    }
+
+    &__desc {
+        grid-column: 1 / -1;
+        font-size: 1.5rem;
+        padding: 0 3rem 3rem 3rem;
+        text-align: center;
+    }
+
+    &__btn {
+        grid-column: 1 / -1;
+        transform: translateY(0) !important;
+    }
+
+}
